@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 48px 20px; font-family: Arial, sans-serif; background: #f3f7f9; color: #102a43; }
+.message { max-width: 1100px; margin: 0 auto; }
+.message h1 { margin: 0 0 28px; text-align: center; }
+/* TEAM PROFILES */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.profile_card {
+    background: white;
+    width: 30%;
+    min-width: 220px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #dce6eb;
+    box-shadow: 0 10px 25px rgba(16, 42, 67, 0.08);
+}
+
+.profile_card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 5px solid #e3f5f3;
+    outline: 2px solid #38b2ac;
+}
+
+.profile_card h3,
+.profile_card h4,
+.profile_card h5 {
+    color: #102a43;
+    margin: 10px 0 5px;
+}
+
+.profile_card p {
+    margin: 5px 0;
+    color: #526777;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile_card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

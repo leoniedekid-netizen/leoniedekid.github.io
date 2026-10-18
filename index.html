@@ -10,7 +10,7 @@
 <body>
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Go to homepage"><span class="brand-mark">Y</span> Leonied S. Ekid<span class="brand-light"></span></a>
+      <a class="brand" href="#home" aria-label="Go to homepage"><span class="brand-mark">L</span> Leonied S. Ekid<span class="brand-light"></span></a>
       <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
       <label class="nav-toggle-label" for="nav-toggle"><span></span><span></span><span></span></label>
       <nav class="nav-menu" aria-label="Main navigation">
@@ -47,7 +47,7 @@
         <div class="hero-art" aria-label="Decorative profile illustration">
           <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
           <div class="code-card card-top"><span class="code-dot"></span><span class="code-dot"></span><span class="code-dot"></span><div class="code-lines"><i></i><i></i><i></i></div></div>
-          <div class="profile-placeholder"><img src="img/462060528_3878148232464799_4481136080876655393_n.jpg" alt="Portrait representing an aspiring IT professional"></div>
+          <div class="profile-placeholder" role="img" aria-label="Profile photo placeholder"><span class="placeholder-label"><img src="img/462060528_3878148232464799_4481136080876655393_n.jpg" alt=""></span></div>
           <div class="floating-badge badge-html"><b>&lt;/&gt;</b><span>Web Development</span></div>
           <div class="floating-badge badge-design"><b></b><span>UI / UX Design</span></div>
           <div class="art-label">DESIGN <span></span> TECHNOLOGY</div>
@@ -66,8 +66,8 @@
         <div class="about-grid">
           <div class="about-visual">
             <div class="about-card">
-              <div class="profile-placeholder"><img src="img/462060528_3878148232464799_4481136080876655393_n.jpg" alt="Portrait representing an aspiring IT professional"></div>
-              <div class="about-monogram">YN<span>.</span></div>
+              <div class="profile-placeholder about-profile-placeholder" role="img" aria-label="Profile photo placeholder"><span class="placeholder-icon" aria-hidden="true"></span><span class="placeholder-label"><img src="img/462060528_3878148232464799_4481136080876655393_n.jpg" alt=""></span></div>
+              <div class="about-monogram">LE<span>.</span></div>
               <p class="about-card-title">LEARN. BUILD. IMPROVE.</p>
               <div class="mini-stat-row"><div><strong>01</strong><span>Curiosity</span></div><div><strong>02</strong><span>Creativity</span></div><div><strong>03</strong><span>Growth</span></div></div>
             </div>
@@ -140,6 +140,23 @@
           <article class="project-card"><div class="project-art project-art-one"><span class="project-chip">WEB DESIGN</span><div class="browser-mock"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mock-content"><b></b><b></b><span></span><span></span><em></em></div></div></div><div class="project-info"><div><p class="project-category">01 / WEBSITE</p><h3>Personal Portfolio</h3></div><a href="#contact" class="project-arrow" aria-label="Ask about Personal Portfolio">↗</a><p>A responsive personal website that presents skills, background, and projects.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>Responsive</span></div></div></article>
           <article class="project-card"><div class="project-art project-art-two"><span class="project-chip">API DEVELOPMENT</span><div class="api-mock"><div class="api-line"><b>GET</b><span>/api/students</span></div><div class="api-line"><b class="put">PUT</b><span>/api/students/{id}</span></div><div class="api-line"><b class="post">POST</b><span>/api/students</span></div><div class="api-status">✓ 200 OK</div></div></div><div class="project-info"><div><p class="project-category">02 / BACKEND</p><h3>Student API</h3></div><a href="#contact" class="project-arrow" aria-label="Ask about Student API">↗</a><p>A learning project exploring CRUD endpoints and database connectivity.</p><div class="tag-row"><span>Python</span><span>FastAPI</span><span>MySQL</span></div></div></article>
           <article class="project-card"><div class="project-art project-art-three"><span class="project-chip">UI / UX</span><div class="phone-mock"><div class="phone-notch"></div><div class="phone-title">Good food,<br><b>delivered.</b></div><div class="food-circle">✦</div><div class="phone-button">Explore menu</div></div></div><div class="project-info"><div><p class="project-category">03 / PROTOTYPE</p><h3>Food Delivery UI</h3></div><a href="#contact" class="project-arrow" aria-label="Ask about Food Delivery UI">↗</a><p>A sample food delivery interface concept focused on simple navigation.</p><div class="tag-row"><span>Figma</span><span>Prototype</span><span>UX</span></div></div></article>
+          <article class="project-card">
+            <div class="project-art project-art-two">
+              <span class="project-chip">HTML &amp; CSS</span>
+              <div class="api-mock">
+                <div class="api-line"><b>CSS</b><span>Values &amp; Properties</span></div>
+                <div class="api-line"><b class="put">UI</b><span>Team profile cards</span></div>
+                <div class="api-line"><b class="post">RWD</b><span>Responsive layout</span></div>
+                <div class="api-status">✓ Project preview</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div><p class="project-category">04 / CSS PRACTICE</p><h3>CSS Values &amp; Properties</h3></div>
+              <a href="css_values/index.html" class="project-arrow" aria-label="Open CSS Values and Properties project" target="_blank" rel="noopener noreferrer">↗</a>
+              <p>A team profile page built with HTML and CSS, featuring responsive profile cards and image styling.</p>
+              <div class="tag-row"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+            </div>
+          </article>
         </div>
         <div class="center-action"><a class="button button-outline-dark" href="#contact">Have a project in mind? <span>Let's connect ↗</span></a></div>
       </div>
@@ -175,7 +192,7 @@
           <div class="contact-info"><h3>Let's start a conversation.</h3><p class="muted">I'm open to learning opportunities, academic collaborations, and creative projects.</p>
             <a class="contact-method" href="mailto:your.email@example.com"><span class="contact-icon">@</span><span><small>EMAIL ME</small><strong>your.email@example.com</strong></span></a>
             <div class="contact-method"><span class="contact-icon">⌁</span><span><small>LOCATION</small><strong>Your City, Philippines</strong></span></div>
-            <a class="contact-method" href="https://github.com/" target="_blank" rel="noreferrer"><span class="contact-icon">GH</span><span><small>GITHUB</small><strong>View my repositories ↗</strong></span></a>
+            <a class="contact-method" href="https://github.com/leoniedekid-netizen/leoniedekid.github.io" target="_blank" rel="noreferrer"><span class="contact-icon">GH</span><span><small>GITHUB</small><strong>View my repositories ↗</strong></span></a>
             <div class="contact-note"><span>✦</span><p><strong>Currently learning</strong><br>Web development, APIs, databases, and software integration.</p></div>
           </div>
           <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
