@@ -1,7 +1,4 @@
-/* ==========================================================
-   PERSONAL PORTFOLIO — responsive stylesheet
-   Edit colors, text, skill levels, and project details as needed.
-   ========================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -150,7 +147,7 @@ button, input, textarea { font: inherit; }
   .mini-stat-row { gap: 16px; }.mini-stat-row span { font-size: 9px; }
 }
 
-/* Image safety: retain the styled placeholder if a personal portrait is not supplied. */
+
 .profile-placeholder > img.hero-profile-image {
   position: relative;
   z-index: 1;
@@ -162,7 +159,6 @@ button, input, textarea { font: inherit; }
 }
 
 
-/* Clearly marked portrait placeholders for the Home and About sections. */
 .profile-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; }
 .profile-placeholder .placeholder-icon { display: grid; place-items: center; width: 48px; height: 48px; border: 1px dashed rgba(255,255,255,.78); border-radius: 50%; color: #fff; font-size: 30px; font-weight: 300; line-height: 1; background: rgba(16,26,44,.2); }
 .profile-placeholder .placeholder-label { color: #fff; font-size: 9px; font-weight: 800; letter-spacing: 1.6px; text-shadow: 0 1px 5px rgba(0,0,0,.45); }
