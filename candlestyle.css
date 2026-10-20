@@ -1,9 +1,4 @@
-/* ==========================================================
-   Leonied Artisan Candles - custom styles
-   Aesthetic: warm and quiet, sage stone background, amber flame
-   ========================================================== */
 
-/* ---------- Design tokens: change these to re-theme the site ---------- */
 :root {
   --bg: #eceee6;            /* sage-tinted stone */
   --bg-tint: #e0e4d8;       /* slightly deeper band for alternating sections */
@@ -147,7 +142,7 @@ a { color: inherit; }
   font-size: .8rem; font-weight: 700; padding: .2rem .7rem; border-radius: 999px;
 }
 
-/* Product artwork: a small jar tinted by --wax and --jar set inline in the HTML */
+
 .product-art {
   position: relative; height: 210px;
   background: linear-gradient(180deg, var(--bg-tint), var(--surface));
